@@ -11,7 +11,7 @@ function Header() {
   return (
   <>
     <header ref={headerRef} className='header'>
-     <img src={zooLogo} alt="img"/>
+     <h1 className='header_h1'>RESTAURANT</h1>
      <ul className='header_list'>
      <li className='header_item'>
      <select className='input_title_more_select' defaultValue={langData} type="text" onChange={(e) => {
