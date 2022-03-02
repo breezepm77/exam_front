@@ -1,0 +1,117 @@
+.header {
+display: flex;
+justify-content: space-around;
+width: 100%;
+position: fixed;
+top: 0;
+background-color: #fff;
+z-index: 300;
+height: 100px;
+}
+.header_list {
+display: flex;
+margin-top: 40px;
+}
+.header_item {
+margin-left: 30px;
+list-style-type: none;
+&:nth-child(5) {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 2px;
+}
+}
+.header_link{
+text-decoration: none;
+color: #4FBDBA;
+&:hover {
+  color: #4FBDBA;
+}
+}
+.input_title_more_select {
+  margin-left: -111px;
+  padding-left: 3px;
+  padding-bottom: 6px;
+  border: .1px solid #ccc;
+  color: #4FBDBA;
+  border-radius: 3px;
+  position: absolute;
+  &:focus {
+  outline: none;
+  transition: 0.3s ease all;
+  border: .1px solid #4FBDBA;
+  }
+}
+.btn_header {
+   text-decoration: none;
+   color: #fff;
+   background-color: #4FBDBA;
+   margin-top: 30px;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 11px;
+   padding-bottom: 36px;
+   border-radius: 1px;
+   border: 2px solid #4FBDBA;
+   height: 0px;
+   &:hover {
+     color: #4FBDBA;
+     background-color: transparent;
+     transition: 1s ease all;
+   }
+}
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+// body {
+// 	min-height: 100vh;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+.light {
+  background-color: #19302f;
+}
+input[type="checkbox"] {
+	visibility: hidden;
+	&:checked + label {
+		transform: rotate(360deg);
+		background-color: #4FBDBA;
+		&:before {
+			transform: translateX(42px);
+			background-color: #FFF;
+		}
+	}
+}
+.dark {
+  background-color: #000;
+}
+
+label {
+	display: flex;
+	width: 90px;
+	height: 44px;
+	border: 6px solid;
+	border-radius: 99em;
+  border: 7px solid #4FBDBA;
+	position: relative;
+	transition: transform .75s ease-in-out;
+	transform-origin: 50% 50%;
+	cursor: pointer;
+  margin-top: -28px;
+	
+	&:before {
+		transition: transform .75s ease;
+		transition-delay: .5s;
+		content: "";
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 28px;
+		background-color: #4FBDBA;
+		border-radius: 50%;
+		top: 1px;
+		left: 3px;
+	}
+}
